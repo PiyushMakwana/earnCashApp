@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+   <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap: ws: https://ssl.gstatic.com;style-src 'self' 'unsafe-inline' data: blob:;media-src *;img-src 'self' data: content:;script-src * 'unsafe-inline' 'unsafe-eval' data: blob:;">
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <!-- Your app title -->
+    <title>Earn Cash Ali</title>
+
+    <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
+        http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
+     -->
+
+    <!-- <link rel="stylesheet" href="http://localhost/earnCashApp/www/lib/framework7/css/framework7.material.colors.min.css">
+    <link rel="stylesheet" href="http://localhost/earnCashApp/www/lib/framework7/css/framework7.material.min.css">
+    <link rel="stylesheet" href="http://localhost/earnCashApp/www/css/framework7-icons.css">
+    <link rel="stylesheet" href="http://localhost/earnCashApp/www/css/styles.css"> -->
+    <link rel="stylesheet" href="lib/framework7/css/framework7.material.colors.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.material.min.css">
+    <link rel="stylesheet" href="css/framework7-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- <div > -->
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-right panel-cover user-info">
+        <div class="row custom-top-block">
+            <div class="col-100 tablet-100">
+                <div class="settings">
+                    <a class="close-panel" href="#"><!-- <i class="icon icon-back"></i> --></a>
+                </div>
+                <div class="user-div-center">
+                    <!-- <div class="user-avatar"></div> -->
+                </div>
+                <div class="user-div-center user-info-center">
+                    <!-- <h2>Welcome</h2> -->
+                    <!-- <p>ID: 122334</p> -->
+                    <!-- <h2>Welcome</h2> -->
+                    <!-- <p></p> -->
+                    <!-- <p>Login to access your profile and other details</p> -->
+                </div>
+            </div>
+        </div>
+        <div class="upper-content-block">
+            <div class="row common-block">
+                <div class="col-100 tablet-100">
+                    <div class="list-block">
+                      <ul>
+                        <li>
+                          <a href="account.html" class="close-panel item-link item-content">
+                            <div class="item-media"><i class="acc-icon back-icon"></i></div>
+                            <div class="item-inner">
+                              <div class="item-title">Account details</div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="withdraw_history.html" class="close-panel item-link item-content">
+                            <div class="item-media"><i class="withdraw-icon back-icon"></i></div>
+                            <div class="item-inner">
+                              <div class="item-title">Withdraw history</div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="share.html" class="close-panel item-link item-content">
+                            <div class="item-media"><i class="share-icon back-icon"></i></div>
+                            <div class="item-inner">
+                              <div class="item-title">Share to friends and earn</div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="mission.html" class="close-panel item-link item-content">
+                            <div class="item-media"><i class="newbie-icon back-icon"></i></div>
+                            <div class="item-inner">
+                              <div class="item-title">Newbie missions to earn</div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="close-panel item-link item-content border-0">
+                            <div class="item-media"><i class="mall-icon back-icon"></i></div>
+                            <div class="item-inner">
+                              <div class="item-title">Coins mall</div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="app-btn">
+                <a href="login.html" class="close-panel button button-raised button-fill" id="logoutbtn">logout</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Views -->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages navbar-through toolbar-through">
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="index" class="page">
+                    <!-- Scrollable page content -->
+                    <div class="page-content login-screen-content">
+                        <div class="content-block">
+                            <div class="row earn-option">
+                                <div class="col-100 tablet-100">
+                                    <div class="login-screen-title">
+                                        <h1><a href="javascript:void(0)"><img src="css/img/logo.png"></a></h1>
+                                    </div>
+                                    <div class="logo-info">
+                                        <p>Discover the real way to Earn cash</p>
+                                    </div>
+                                </div>
+                                <div class="col-100 tablet-100">
+                                    <div class="social-media">
+                                        <h2>Continue with social media</h2>
+                                        <ul>
+                                            <li><a href="javascript:void(0)"><img src="img/fb-l.png"/></a></li>
+                                            <li><a href="javascript:void(0)"><img src="img/google-l.png"/></a></li>
+                                            <li><a href="javascript:void(0)"><img src="img/twt-l.png"/></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="or-sec">
+                                        <h2>or</h2>
+                                    </div>
+                                    <div class="index-register">
+                                        <a href="register.html" class="close-panel button button-raised button-fill">Register with Email</a>
+                                    </div>
+                                    <div class="index-register">
+                                        <p>Already register with email.<a href="login.html" class="login-link">Login</a></p>
+                                    </div>
+                                    <div class="terms">
+                                <p>By Login you cofirm that you agree to the <a href="#" class="green-color">Terms &amp; Conditions</a> and <a href="#" class="green-color">Privacy Policy</a></p>
+                            </div>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+            <!-- Bottom Toolbar-->
+            <div class="toolbar">
+                <div class="toolbar-inner">
+                    <!-- Toolbar links -->
+                    <div class="social-media">
+                        <ul>
+                            <li><a href="#"><img src="img/fb.png"/></a></li>
+                            <li><a href="#"><img src="img/twt.png"/></a></li>
+                            <li><a href="#"><img src="img/in.png"/></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script type="text/javascript" src="cordova.js"></script> -->
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="js/register.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/logout.js"></script>
+    <script type="text/javascript"></script>
+</body>
+
+</html>

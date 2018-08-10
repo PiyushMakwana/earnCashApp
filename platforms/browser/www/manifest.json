@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Earn Cash Ali",
+  "short_name": "Earn Cash Ali",
+  "version": "com.phonegap.demoApp",
+  "description": "App to earn a real cash.",
+  "author": "Piyush Makwana",
+  "icons": [],
+  "start_url": "index.html"
+}

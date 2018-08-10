@@ -1,0 +1,60 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
+
+<!-- <div class="pages"> -->
+    <div data-page="login" class="page">
+        <!-- Top Navbar-->
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="left">
+                    <a href="#" class="back link">
+                        <i class="icon icon-back"></i>
+                    </a>
+                </div>
+                <div class="center sliding">Login</div>
+                <div class="right">
+                    <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="page-content ">
+            <div class="content-block">
+                <div class="row common-block earn-option">
+                    <form name="login-form" class="signin" method="post">
+                        <div class="col-100 tablet-100">
+                            <div class="styled-input">
+                              <!-- <input type="email" name="user_email" required> -->
+                              <input type="text" name="email" id="email" size="50" required/>
+                              <span class="input-clear-button"></span>
+                              <label>Email ID</label>
+                              <div id="register_email_required" class="errormsg">Email is required.</div>
+                              <div id="register_email_invalid" class="errormsg">Email is invalid.</div>
+                            </div>
+                        </div>
+                        <div class="col-100 tablet-100">
+                            <div class="styled-input">
+                              <!-- <input type="password" name="user_pass" required> -->
+                              <input type="password" name="password" id="password" size="12" min="6" required/>
+                              <span class="input-clear-button"></span>
+                              <label>Password</label>
+                              <!-- <div class="hint">* Please enter a valid password</div> -->
+                              <div id="register_password_required" class="errormsg">Password is required.</div>
+                            </div>
+                        </div>
+                        <div class="col-100 tablet-100">
+                            <div class="terms">
+                                <p>By Login you cofirm that you agree to the <a href="#" class="green-color">Terms &amp; Conditions</a> and <a href="#" class="green-color">Privacy Policy</a></p>
+                            </div>
+                        </div>
+                        <div class="col-100 tablet-100">
+                            <div class="register-btn">
+                                <!-- <a href="#" class="button button-raised button-fill">Submit</a> -->
+                                <input type="button" class="button button-raised button-fill" onclick="return login();" name="btn-save" value="Login"/>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- </div> -->
