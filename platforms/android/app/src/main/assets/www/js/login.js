@@ -19,7 +19,7 @@ function login() {
     });
     if (!hasError) {
         $.ajax({
-            url: "http://localhost:3000/api/users/login",
+            url: baseUrl + "/users/login",
             type: "POST",
             data: formData,
             contentType: "application/x-www-form-urlencoded",

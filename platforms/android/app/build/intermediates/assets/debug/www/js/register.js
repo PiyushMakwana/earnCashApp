@@ -23,7 +23,7 @@ function register() {
     });
     if (!hasError) {
         $.ajax({
-            url: "http://localhost:3000/api/users",
+            url: baseUrl + "/users",
             type: "POST",
             data: formData,
             contentType: "application/x-www-form-urlencoded",

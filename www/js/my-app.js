@@ -133,23 +133,5 @@ myApp.onPageInit('bank_transfer', function (page) {
 // });
 // var $ptrContent = $$('.ptr-content');
 // appAvailability plugin js strta
-var scheme;
-
-// Don't forget to add the cordova-plugin-device plugin for `device.platform`
-if(device.platform === 'iOS') {
-    scheme = 'twitter://';
-}
-else if(device.platform === 'Android') {
-    scheme = 'com.twitter.android';
-}
-appAvailability.check(
-    'com.twitter.android', // Package Name
-    function(info) {           // Success callback        
-        // Info parameter is available only for android
-        console.log('Twitter is available, and it\'s version is ', info.version);
-    },
-    function() {           // Error callback
-        console.log('Twitter is not available');
-    }
-);
+// 
 // appAvailability plugin js ends

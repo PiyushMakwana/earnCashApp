@@ -6,7 +6,7 @@ $(document).ready(function(){
     myApp.onPageInit('home download', function (page) {
         $.ajax({
             type: 'GET',
-            url: "http://localhost:3000/api/app",
+            url: baseUrl + "/app",
             contentType: "application/x-www-form-urlencoded",
             dataType: 'json',
             headers :{
@@ -47,7 +47,7 @@ $(document).ready(function(){
 myApp.onPageInit('earnintro', function (page) {
     $.ajax({
         type: 'GET',
-        url: "http://localhost:3000/api/app",
+        url: baseUrl + "/app",
         contentType: "application/x-www-form-urlencoded",
         dataType: 'json',
         headers :{
@@ -122,7 +122,7 @@ function getParameterByName(name, url) {
 myApp.onPageInit('*', function (page) {
     $.ajax({
         type: 'GET',
-        url: "http://localhost:3000/api/app",
+        url: baseUrl + "/app",
         contentType: "application/x-www-form-urlencoded",
         dataType: 'json',
         // data: ['id', 'username', 'mobileNumber'],
